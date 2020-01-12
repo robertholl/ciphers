@@ -18,9 +18,15 @@ my $index = first_index { $_ eq 'x'} @alphabet;
 print "Index number is: $index \n";
 print "Array length is: $length \n";
 if ($ARGV[0] eq 'E'){
+
+
+for (my $i=0; $i <= length($ARGV[2])-1; $i++) {
+     print substr($ARGV[2], $i, 1)." ";
+}
+print "\n";
 	print "Encrypt code here.\n";
-	print "Shift is: $shift.\n";
-	print "Text to encrypt is: $text\n";
+	print "Shift is: $ARGV[1].\n";
+	print "Text to encrypt is: $ARGV[2]\n";
 }
 else {
 	print "Decrypt code here.\n";
